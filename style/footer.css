@@ -1,0 +1,73 @@
+    /* Footer styling */
+    footer {
+        background-color: #212179;
+        color: #f8f9fa;
+        margin-top: 10%;
+        height: 50vh;
+        padding-top: 40px;
+      }
+      /* Logo styling */
+.footer-logo img {
+    max-width: 100%;  /* Ensures the logo scales responsively */
+    height: 80px;    /* Increased height */
+    width: 30vw;     /* Increased width */
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-logo img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+      footer h5 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        color: #ffffff;
+      }
+      footer p, footer li {
+        font-size: 0.9rem;
+        line-height: 1.8;
+        color: #dddddd;
+      }
+      footer ul {
+        list-style: none;
+        padding: 0;
+      }
+      footer ul li a {
+        color: #dddddd;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      footer ul li a:hover {
+        color: #ff5722;
+      }
+      .social-icons a {
+        font-size: 20px;
+        margin: 0 15px;
+        color: #dddddd;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+      .social-icons a:hover {
+        color: #ff5722;
+        transform: scale(1.2);
+      }
+      /* Logo styling */
+      .footer-logo img {
+        max-width: 180px;
+        transition: transform 0.3s ease;
+      }
+      .footer-logo img:hover {
+        transform: scale(1.1);
+      }
+      /* Transition effect */
+      .footer-logo img,
+      footer ul li a,
+      .social-icons a {
+        transition: all 0.3s ease;
+      }
+      /* Copyright section */
+      .copyright {
+        background-color: #212179;
+        padding: 10px 0;
+        font-size: 0.85rem;
+      }

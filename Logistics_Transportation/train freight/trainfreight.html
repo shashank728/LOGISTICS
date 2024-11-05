@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Freight Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style/index.css">
+    <style>
+        body {
+            background-color: #f5f8fb;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-brand, .nav-link {
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('train-freight.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero h1, .hero p {
+            position: relative;
+            z-index: 2;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+        }
+
+        .service-card {
+            transition: transform 0.3s ease-in-out, background 0.3s;
+            margin-bottom: 30px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            background: linear-gradient(120deg, rgba(0, 88, 38, 0.9), rgba(40, 175, 123, 0.9));
+            color: white;
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card:hover .card-title {
+            color: white;
+        }
+
+        .service-card .card-img-top {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .service-card .card-body {
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            transition: background-color 0.3s;
+        }
+
+        .service-card h5 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: color 0.3s;
+        }
+
+        .btn-custom {
+            background: linear-gradient(90deg, rgba(0, 88, 38, 0.7), rgba(40, 175, 123, 0.7));
+            color: white;
+            border: none;
+            transition: background 0.4s, transform 0.4s;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .btn-custom:hover {
+            background: linear-gradient(90deg, rgba(0, 88, 38, 0.9), rgba(40, 175, 123, 0.9));
+            transform: translateY(-3px);
+        }
+
+        .card-body .btn-custom {
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 1140px;
+        }
+
+        footer {
+            background-color: #1b4d3e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+      <!--Navbar-->
+  <nav class="navbar">
+    <div class="logo">
+        <img src="/images/logo-removebg-preview.png" alt="Logo">
+    </div>
+    <div class="nav-items">
+        <a href="/index.html" class="nav-link">
+            Home 
+        </a>
+        <a href="/Logistics_Transportation/about page/about.html" class="nav-link">
+            About Us 
+        </a>
+        <a href="/Logistics_Transportation/our employees/employee.html" class="nav-link">
+            Our Employees 
+        </a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Services <i class='bx bxs-down-arrow' id="arrowofnav"></i>
+            </button>
+            <div class="dropdown-content">
+              <a style="margin-top: 5%;" href="/Logistics_Transportation/air frieght services/freight.html">Air Freight Services</a>
+              <a href="/Logistics_Transportation/train freight/trainfreight.html">Train Freight Services</a>
+              <a href="/Logistics_Transportation/nvocc/seafreight.html">Sea Freight Services</a>
+              <a href="/Logistics_Transportation/export wine/exportwine.html">Alcohol and Wine Exports</a>
+              <a href="/Logistics_Transportation/luxury import export/car_export_import.html">Export Vehicles with Us</a>
+              <a href="/Logistics_Transportation/custom brokerage/warehouse.html">Warehousing Services</a>
+              <a href="/Logistics_Transportation/break bulk/projectcargo.html">Project Cargo Services</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Tools <i class='bx bxs-down-arrow' id="arrowofnav"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://dilas.ca/commercial-shipments/" >Commercial</a>
+                <a href="https://dilas.ca/personal-agreement/" >Personal</a>
+                <a href="https://dilas.ca/brokerage-fees-calculator/" >Fees Calculator</a>
+            </div>
+        </div>
+        <a href="/contactus/index.html" class="nav-link">
+            Contact Us <span class="icon"></span>
+        </a>
+    </div>
+  </nav>
+
+    <section class="hero">
+        <h1>Reliable Train Freight Services</h1>
+        <p>Fast, secure, and cost-effective solutions for your logistics needs.</p>
+    </section>
+
+    <div class="container mt-5" id="services">
+        <h2 class="text-center">Our Train Freight Services</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="/images/bulk_cargo_export.jpg" class="card-img-top" alt="Export Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Bulk Cargo Export</h5>
+                        <p>Efficient handling of large-scale shipments for global export via railway transport.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="/images/bulk_cargo_import.jpg" class="card-img-top" alt="Import Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Bulk Cargo Import</h5>
+                        <p>Import your goods securely with our optimized rail solutions, designed for time-sensitive deliveries.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="/images/cold_chain_logistic.jpeg.jpg" class="card-img-top" alt="Cold Chain">
+                    <div class="card-body">
+                        <h5 class="card-title">Cold Chain Logistics</h5>
+                        <p>Specialized cold storage and transport for perishable items, ensuring temperature control throughout.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card service-card">
+                    <img src="/images/supply_chain_intermodel.jpg" class="card-img-top" alt="Intermodal">
+                    <div class="card-body">
+                        <h5 class="card-title">Intermodal Freight Solutions</h5>
+                        <p>Seamless integration of train, truck, and other transport methods to optimize your supply chain.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card service-card">
+                    <img src="/images/door_to_door.webp" class="card-img-top" alt="Door-to-Door Service">
+                    <div class="card-body">
+                        <h5 class="card-title">Door-to-Door Delivery</h5>
+                        <p>Comprehensive service from your warehouse to your customer's doorstep via our rail network.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card service-card">
+                    <img src="/images/Customs-clearance.jpg" class="card-img-top" alt="Customs Clearance">
+                    <div class="card-body">
+                        <h5 class="card-title">Customs Clearance & Handling</h5>
+                        <p>We manage the complexities of customs for you, ensuring smooth and hassle-free transit.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2024 Global Rail Logistics. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        $('a[href^="#"]').on('click', function (event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+
+</html>

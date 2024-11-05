@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <meta charset="UTF-8">
+  <title>U.S. Handle WorldWide Trade</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/cardslider.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/aboutus.css">
+    <link rel="stylesheet" href="/style/stickycontainer.css">
+    <link rel="stylesheet" href="/style/form.css">
+    <link rel="stylesheet" href="/style/nav.css">
+
+    <style>
+/* Prevent horizontal scrolling */
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%; /* Ensure images do not overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 768px) {
+    /* Adjust navbar logo size */
+    .logo img {
+        height: 50px; /* Adjust logo height for mobile */
+    }
+
+    /* Adjust navbar padding */
+    .navbar-container {
+        padding: 0 10px; /* Reduce padding for mobile */
+    }
+
+    /* Make the carousel images responsive */
+    .carousel-inner img {
+        width: 100%; /* Ensure carousel images are responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust the form container */
+    .form-container {
+        width: 90%; /* Make form container responsive */
+        max-width: 100%; /* Ensure it doesn't exceed screen width */
+        margin: 0 auto; /* Center the form */
+    }
+
+    /* Adjust the experience counter layout */
+    .experience-counter {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .counter-item {
+        margin: 10px 0; /* Add spacing between items */
+    }
+
+    /* Adjust the FAQ section */
+    .faq-section {
+        width: 90%; /* Make FAQ section responsive */
+        max-width: 100%; /* Ensure it doesn't exceed screen width */
+        margin: 0 auto; /* Center the FAQ section */
+    }
+
+    /* Adjust button sizes */
+    .btn {
+        padding: 10px 20px; /* Adjust button padding for mobile */
+        font-size: 16px; /* Increase font size for better readability */
+    }
+
+    /* Hide sticky social icons on mobile */
+    .sticky-container,
+    .sticky-left-container {
+        display: none; /* Hide on mobile */
+    }
+
+    /* Adjust text sizes for mobile */
+    h1, h2 {
+        font-size: 24px; /* Adjust heading sizes */
+    }
+
+    p {
+        font-size: 16px; /* Adjust paragraph sizes */
+    }
+}
+
+/* Carousel styles for both desktop and mobile */
+.custom-carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.custom-carousel .carousel-inner {
+    height: 600px; /* Fixed height for desktop */
+}
+
+.custom-carousel .carousel-item,
+.custom-carousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+}
+
+.custom-carousel .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .custom-carousel .carousel-inner {
+        height: 300px; /* Adjusted height for mobile */
+    }
+}
+
+
+/* Default styles for carousel */
+.carousel-inner {
+    width: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+    .carousel-item {
+        height: 300px; /* Set fixed height for mobile - adjust this value as needed */
+    }
+    
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* Optional: For very small screens */
+@media screen and (max-width: 480px) {
+    .carousel-item {
+        height: 250px; /* Adjust height for very small screens if needed */
+    }
+}
+    </style>
+
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="loader">
+      <img src="./images/logo-removebg-preview.png" alt="Logo" id="preloader-logo">
+    </div>
+  </div>
+  <script>
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      document.getElementById('preloader').style.display = 'none';
+    }, 3000); // 3 seconds delay
+  });
+  </script>
+  
+
+<!--navbar-->
+
+
+<nav class="navbar">
+  <div class="navbar-container">
+      <div class="logo">
+          <img src="/images/logo-removebg-preview.png" alt="Logistics Logo">
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+      <ul class="nav-menu">
+          <li><a href="/index.html" class="nav-links">Home</a></li>
+          <li><a href="/Logistics_Transportation/about page/about.html" class="nav-links">About</a></li>
+          <li class="dropdown">
+              <a href="#services" class="nav-links">Services <span class="dropdown-arrow">&#9662;</span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/Logistics_Transportation/air frieght services/freight.html">Air Freight Services</a></li>
+                  <li><a href="/Logistics_Transportation/nvocc/seafreight.html">Sea Freight Services</a></li>
+                  <li><a href="/Logistics_Transportation/train freight/trainfreight.html">Train Freight Services</a></li>
+                  <li><a href="/Logistics_Transportation/mark entry/markentry.html">Market Entry Services</a></li>
+                  <li><a href="/Logistics_Transportation/luxury import export/car_export_import.html">Export Premium Vehicles</a></li>
+                  <li><a href="/Logistics_Transportation/export wine/exportwine.html">Alcohol and Wine Exports</a></li>
+                  <li><a href="/Logistics_Transportation/bill of lading/billoflading.html">Custom Clearance Services</a></li>
+                  <li><a href="/Logistics_Transportation/break bulk/projectcargo.html">Project Cargo Services</a></li>
+                  <li><a href="/Logistics_Transportation/custom brokerage/warehouse.html">Warehousing Services</a></li>
+              </ul>
+          </li>
+          <li><a href="/Logistics_Transportation/our employees/employee.html" class="nav-links">Our Employees</a></li>
+          <li class="dropdown">
+              <a href="#tools" class="nav-links">Tools <span class="dropdown-arrow">&#9662;</span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="https://dilas.ca/commercial-shipments/">Commercial</a></li>
+                  <li><a href="https://dilas.ca/personal-agreement/">Personal</a></li>
+                  <li><a href="https://dilas.ca/brokerage-fees-calculator/">Fees Calculator</a></li>
+              </ul>
+          </li>
+          <li><a href="/contactus/index.html" class="nav-links">Contact</a></li>
+      </ul>
+  </div>
+</nav>
+  
+<!--nav script-->
+
+<script>
+  const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.nav-menu');
+const dropdowns = document.querySelectorAll('.dropdown');
+
+menu.addEventListener('click', function() {
+    menu.classList.toggle('active');
+    menuLinks.classList.toggle('active');
+});
+
+// Handle dropdowns on mobile
+dropdowns.forEach(dropdown => {
+    const link = dropdown.querySelector('.nav-links');
+    const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+
+    link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdown.classList.toggle('active');
+            
+            // Close other open dropdowns
+            dropdowns.forEach(otherDropdown => {
+                if (otherDropdown !== dropdown && otherDropdown.classList.contains('active')) {
+                    otherDropdown.classList.remove('active');
+                }
+            });
+
+            // Toggle visibility of dropdown menu
+            if (dropdown.classList.contains('active')) {
+                dropdownMenu.style.display = 'block';
+            } else {
+                dropdownMenu.style.display = 'none';
+            }
+        }
+    });
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768) {
+        if (!e.target.closest('.dropdown')) {
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+                dropdown.querySelector('.dropdown-menu').style.display = 'none';
+            });
+        }
+    }
+});
+
+// Optional: Solid background on scroll
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+</script>
+
+
+  
+<div id="carouselExampleIndicators" style="margin-bottom: 10%;" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/lg_website_1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://proconnectlogistics.com/v1/wp-content/uploads/2019/11/shutterstock_748195201.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://live.staticflickr.com/65535/47069765844_2e664ebb0f_b.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/us_web_img2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+
+
+
+
+  <!-- hero slider  -->
+
+
+</div>
+
+
+<div class="container">
+    <h1 id="type1">About Us</h1>
+    <div class="content">
+        <div class="image-section" id="gsap0">
+            <img src="/images/us_img_5.jpg" alt="Trade and Logistics Image">
+        </div>
+        <div class="text-section" id="gsap3">
+            <h2>U.S. Handle Worldwide Trade, LLC</h2>
+            <p>U.S. Handle Worldwide Trade, LLC serves as your trusted partner for seamless import and export logistics, empowering your supply chain with innovative solutions tailored to meet the demands of today's competitive global market. We operate as a cohesive network of independent transportation and logistics experts, alongside key affiliated service providers, ensuring a robust array of air, ocean, ground, and value-added services on a global scale.</p>
+            <p>Our integrated approach combines state-of-the-art information systems with comprehensive supply chain management, guaranteeing swift, secure, and efficient delivery of your goods worldwide. Whether you are entering new markets or expanding your reach, our solutions provide cost-effective and punctual deliveries that enhance your operational flexibility.</p>
+            <p>Read more about us throught the following Brochure :<br> <a id="hoverkrnahai" href="./ushwtprep.pdf" download="ushwt brochure.pdf">Click Here to Download the Brochure</a></p>
+        </div>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const titleElement = document.getElementById("type1");
+    const text = "About Us";
+    let index = 0;
+
+    function typeWriter() {
+      if (index < text.length) {
+        titleElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 150); // Adjust the speed of typing (milliseconds)
+      }
+    }
+
+    // Clear the text on load
+    titleElement.innerHTML = "";
+
+    // Create an Intersection Observer to detect when the element is in view
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Start typing when the element is in view
+          typeWriter();
+          // Stop observing after typing starts
+          observer.disconnect();
+        }
+      });
+    });
+
+    // Observe the title element (About Us)
+    observer.observe(titleElement);
+  });
+</script>
+
+
+
+
+
+
+
+
+<div class="sabrakho">
+  <img id="exp1" src="https://img.freepik.com/free-vector/organic-flat-feedback-concept-illustrated_23-2148951369.jpg?t=st=1729715272~exp=1729718872~hmac=f5fb821e1e55507d6f42cd7a92dfcc03af7892832757df471bbf686c610a196e&w=826">
+  <h1 id="txt2">Our Experience</h1>
+  <div class="experience-counter">
+      <div class="counter-item">
+          <div class="count" id="experienceCount">0</div>
+          <div class="label">Years of Experience</div>
+      </div>
+      <div class="counter-item">
+          <div class="count" id="companyCount">0</div>
+          <div class="label">Years of Company Creation</div>
+      </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const experienceTitle = document.getElementById("txt2");
+    const text = "Our Experience";
+    let index = 0;
+
+    function typeWriter() {
+      if (index < text.length) {
+        experienceTitle.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 150); // Adjust typing speed here (milliseconds)
+      }
+    }
+
+    // Clear the text on load
+    experienceTitle.innerHTML = "";
+
+    // Create an Intersection Observer to detect when the element is in view
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Start typing when the element is in view
+          typeWriter();
+          // Stop observing after typing starts
+          observer.disconnect();
+        }
+      });
+    });
+
+    // Observe the h1 element with id="txt2"
+    observer.observe(experienceTitle);
+  });
+</script>
+
+
+
+
+
+
+
+
+<script>
+  function animateCounter(id, target) {
+      let count = 0;
+      const duration = 2000; // Duration of the animation in milliseconds
+      const incrementTime = duration / target; // Time to increment each step
+
+      const counterInterval = setInterval(() => {
+          if (count < target) {
+              count++;
+              document.getElementById(id).innerText = count + "+";
+          } else {
+              clearInterval(counterInterval);
+          }
+      }, incrementTime);
+  }
+
+  function startCounting(entries, observer) {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              // Start the counters when the element is in view
+              animateCounter('experienceCount', 22);
+              animateCounter('companyCount', 7);
+              observer.disconnect(); // Stop observing once the counters have started
+          }
+      });
+  }
+
+  // Create an IntersectionObserver
+  const observer = new IntersectionObserver(startCounting, {
+      threshold: 0.6 // Trigger when 50% of the element is visible
+  });
+
+  // Observe the experience counter section
+  window.onload = () => {
+      const experienceSection = document.querySelector('.experience-counter');
+      observer.observe(experienceSection);
+  };
+</script>
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <h1 id="type2">From the desk of CEO</h1>
+    <div class="content">
+        <div class="image-section" id="gsap1">
+            <img src="/images/krbaeza.jpg" alt="Trade and Logistics Image">
+        </div>
+        <div class="text-section" id="gsap2">
+            <h2>Karla Regina Baeza (CEO)</h2>
+            <p>
+              For more than 25 years. I've been working in the field of International Trade and every day I open something new in this fleid. It makes me love my job, that is why I am always happy to create new projects for my clients. Since the very first day that I got my license from the Department of the Treasury, to act as a Licensed US. Customhouse Broker, I know that I would start a long journey holding this very prestigious title. In 2018, this dreshi came true. Today, I manage my own company at a different level, work with designers and developers, Importers, exporters, trucking companies, warehouses, distribution centers, buyers, sellers, etc., same that are helping them grew their business. I have decided to stay focused and on track about opening markets and moving cargo worldwide for them and to keep my leam, small but very flexible and always ready for the new challenges. If you are looking for a good customhouse broker and need service about your shipments, please let me know and
+              
+              we will do our best to help you. Feel free to contact me directly at, </p><p style="color: blue; font-size: 22px;">E-mail : krbaeza@ushwt.com</p>
+        </div>
+    </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const ceoTitle = document.getElementById("type2");
+    const text = "From the desk of CEO";
+    let index = 0;
+
+    function typeWriter() {
+      if (index < text.length) {
+        ceoTitle.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 170); // Adjust the typing speed here (milliseconds)
+      }
+    }
+
+    // Clear the text on load
+    ceoTitle.innerHTML = "";
+
+    // Create an Intersection Observer to detect when the element is in view
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Start typing when the element is in view
+          typeWriter();
+          // Stop observing after typing starts
+          observer.disconnect();
+        }
+      });
+    });
+
+    // Observe the h1 element with id="type2"
+    observer.observe(ceoTitle);
+  });
+</script>
+
+
+
+
+
+
+<section class="video-section">
+  <div class="video-container" id="gsap4">
+    <iframe width="660" height="315" src="https://www.youtube.com/embed/275HREEbiLg?si=dNAh7PazZQPykd9x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- card slider  -->
+
+
+<br>
+
+        
+       
+
+<div class="slide-container swiper" id="gsap6">
+  <div class="slide-content">
+    <div class="card-wrapper swiper-wrapper">
+      
+      <div class="card swiper-slide" id="adjust">
+        <div class="image-content">
+          <div class="card-image">
+            <img src="/images/Air freight.png" alt="" class="card-img">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="name">Air Freight Services</h2>
+          <p class="description">U.S. Handle Worldwide Trade, LLC. provides professional and comprehensive Air Freight services committed to the safe, reliable and cost effective delivery of your consignment.</p>
+          <a href="/Logistics_Transportation/air frieght services/freight.html" style="text-decoration: none;"><button class="button">Read More</button></a>
+        </div>
+      </div>
+      
+      <div class="card swiper-slide" id="adjust">
+        <div class="image-content">
+          <div class="card-image">
+            <img src="/images/water freight.png" alt="" class="card-img">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="name">Sea Freight Services</h2>
+          <p class="description">U.S. Handle Worldwide Trade, LLC. provides a highly cost-effective method of transporting a range of large, heavy or normal loads.</p>
+          <a href="/Logistics_Transportation/nvocc/seafreight.html"><button class="button">Read More</button></a>
+        </div>
+      </div>
+      
+
+      <div class="card swiper-slide" id="adjust">
+        <div class="image-content">
+          <div class="card-image">
+            <img src="/images/train_img.jpeg" alt="" class="card-img">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="name">Train Freight Services</h2>
+          <p class="description">U.S. Handle Worldwide Trade, LLC. provides a highly cost-effective method of transporting a range of large, heavy or normal loads.</p>
+          <a href="/Logistics_Transportation/train freight/trainfreight.html"><button class="button">Read More</button></a>
+        </div>
+      </div>
+      
+      <div class="card swiper-slide" id="adjust">
+        <div class="image-content">
+          <div class="card-image">
+            <img src="/images/warehouse.png" alt="" class="card-img">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="name">Warehousing Services</h2>
+          <p class="description">Warehousing is an extremely dynamic Logistics service, wherein each client demands a tailor made solution for his/her business model.</p>
+          <a href="/Logistics_Transportation/custom brokerage/warehouse.html"><button class="button">Read More</button></a>
+        </div>
+      </div>
+      
+       <div class="card swiper-slide" id="adjust">
+        <div class="image-content">
+          <div class="card-image">
+            <img src="/images/cargo.png" alt="" class="card-img">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="name">Project Cargo Services</h2>
+          <p class="description">Handling Project Cargo is a specialized job which calls for expertise and experience in this particular field.</p>
+          <a href="/Logistics_Transportation/break bulk/projectcargo.html"><button class="button">Read More</button></a>
+        </div>
+      </div>
+      
+       <!-- <div class="card swiper-slide" id="adjust">
+        <div class="image-content">
+          <div class="card-image">
+            <img src="/images/specialised.png" alt="" class="card-img">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="name">Specialised Cargo Services</h2>
+          <p class="description">Together with the best shipping companies and our agent network we take care of your all kind of cargoes for imports into India as well as for export worldwide.</p>
+          <a href="../Logistics_Transportation/"><button class="button">Read More</button></a>
+        </div>
+      </div>  -->
+      
+       <!-- <div class="card swiper-slide" id="adjust">
+        <div class="image-content">
+          <div class="card-image">
+            <img src="/images/Packaging.png" alt="" class="card-img">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="name">Packaging And Crafting</h2>
+          <p class="description">We are also capable of providing quality packing services for different kinds of office equipments and machinery.</p>
+          <button class="button">Read More</button>
+        </div>
+      </div> -->
+      
+      <div class="card swiper-slide" id="adjust">
+        <div class="image-content">
+          <div class="card-image">
+            <img src="/images/wine.jpeg" alt="" class="card-img">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="name">Alcohol and Wine Exports</h2>
+          <p class="description">We specialize in exporting alcohol and wine with precision and care. We ensure your products reach global destinations swiftly and safely, meeting all international standards.</p>
+          <a href="/Logistics_Transportation/export wine/exportwine.html"><button class="button">Read More</button></a>
+        </div>
+      </div>
+      
+      <div class="card swiper-slide" id="adjust">
+        <div class="image-content">
+          <div class="card-image">
+            <img src="/images/vehicle.jpeg" alt="" class="card-img">
+          </div>
+        </div>
+        <div class="card-content">
+          <h2 class="name">Luxury Vehicle Export & Import</h2>
+          <p class="description">We provide premium logistics for the export and import of high-value vehicles. We ensure your luxury cars are handled with utmost care, reaching their destination safely and on time.</p>
+          <a href="/Logistics_Transportation/luxury import export/car_export_import.html"><button class="button">Read More</button></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div> 
+
+
+
+<!--collab section-->
+
+
+
+
+<div class="cont5">
+  <img src="/images/background.jpg" height="800px" width="1450px">
+  <div class="btn" id="btn">
+    <div class="ball"></div>
+    <a id="textt" href="/html/form.html"><h2 class="text" id="bttn" style="font-size: 40px;">GET YOUR FIRST QUOTE NOW</h2></a>
+  </div>
+</div>
+
+
+<div class="cont6">
+  <img id="welcmimg" src="https://img.freepik.com/premium-vector/mobile-login-flat-design-vector-illustration_1288538-7549.jpg?w=826">
+  <div class="text3">
+    <p id="text3">Be Our Registered User 👍</p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const textElement = document.getElementById("text3");
+      const text = "Be Our Registered User 👍";
+      let index = 0;
+  
+      function typeWriter() {
+        if (index < text.length) {
+          textElement.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, 100); // Adjust the speed of typing here
+        }
+      }
+  
+      // Clear the text on load
+      textElement.innerHTML = "";
+  
+      // Create an Intersection Observer to detect when the element is in view
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Start typing when the element is in view
+            typeWriter();
+            // Stop observing after typing starts
+            observer.disconnect();
+          }
+        });
+      });
+  
+      // Observe the text element
+      observer.observe(textElement);
+    });
+  </script>
+    
+
+
+  <div class="btn" id="btn">
+    <div class="ball"></div>
+    <a id="textt" href="/authantication/sign_up.html"><h2 class="text" id="bttn" style="font-size: 40px;">SIGN UP</h2></a>
+  </div>
+
+  <h1 style="margin-left: 47%; margin-top: 25%;">OR</h1>
+
+  <div class="btn" id="btn">
+    <div class="ball"></div>
+    <a id="textt" href="/authantication/login.html"><h2 class="text" id="bttn" style="font-size: 40px;">SIGN IN</h2></a>
+  </div>
+</div>
+
+
+
+<div class="sticky-container">
+  <ul class="sticky">
+    <li>
+      <img width="32" height="32" title="" alt="" src="../images/icons8-facebook-48.png" />
+      <p>Facebook</p>
+    </li>
+    <li>
+      <img width="32" height="32" title="" alt="" src="../images/icons8-twitter-48.png" />
+      <p>Twitter</p>
+    </li>
+    <li>
+      <img width="32" height="32" title="" alt="" src="../images/icons8-linkedin-48.png" />
+      <p>Linkedin</p>
+    </li>
+    <li>
+      <img width="32" height="32" title="" alt="" src="../images/icons8-instagram-48.png" />
+      <p>Instagram</p>
+    </li>
+  </ul>
+</div>
+<!--Right Side Buttons End-->    
+
+<!--Left Side Buttons Start-->	
+  <!-- <div class="sticky-left-container">
+    <ul class="sticky-left">
+      <li>
+        <img width="32" height="32" title="" alt="" src="../images/icons8-phone-48.png"/>
+        <p>1-346-202-1929</p>
+      </li>
+      <li>
+        <img width="32" height="32" title="" alt="" src="/images/icons8-linkedin-48.png" />
+        <a style="color: white; text-decoration: none;" href="https://www.linkedin.com/company/u-s-handle-worldwide-trade-llc"><p>Click to visit</p></a>
+      </li>
+      <li>
+        <img width="32" height="32" title="" alt="" src="../images/icons8-gmail-48.png" />
+        <p>krbaeza@ushwt.com</p>
+    </li>
+  </ul>
+</div> -->
+<div class="sticky-left-container">
+  <ul class="sticky-left">
+    <li onclick="copyToClipboard('phone-number')">
+      <img width="32" height="32" title="Phone" alt="Phone" src="../images/icons8-phone-48.png"/>
+      <p id="phone-number">1-346-202-1929</p>
+    </li>
+    <li>
+      <img width="32" height="32" title="LinkedIn" alt="LinkedIn" src="/images/icons8-linkedin-48.png" />
+      <a style="color: white; text-decoration: none;" href="https://www.linkedin.com/company/u-s-handle-worldwide-trade-llc"><p>Click to visit</p></a>
+    </li>
+    <li onclick="copyToClipboard('email-address')">
+      <img width="32" height="32" title="Email" alt="Email" src="../images/icons8-gmail-48.png" />
+      <p id="email-address">krbaeza@ushwt.com</p>
+    </li>
+  </ul>
+</div>
+<script>
+function copyToClipboard(elementId) {
+  // Get the text content from the element
+  var textToCopy = document.getElementById(elementId).textContent;
+  
+  // Create a temporary input element to select and copy the text
+  var tempInput = document.createElement("input");
+  tempInput.value = textToCopy;
+  document.body.appendChild(tempInput);
+  
+  // Select the text and copy it to the clipboard
+  tempInput.select();
+  tempInput.setSelectionRange(0, 99999); // For mobile devices
+  document.execCommand("copy");
+  
+  // Remove the temporary input element
+  document.body.removeChild(tempInput);
+  
+  // Optionally, you can display a message or alert
+  alert("Copied: " + textToCopy);
+}
+</script>
+
+
+<div class="cont7">
+  <img id="faqimg" src="/images/faq_img.jpg">
+  <div class="container mt-5" id="faq">
+    <div class="faq-section">
+        <h2 class="text-center" id="tpe4">Frequently Asked Questions</h2>
+        <div class="faq-question" data-toggle="collapse" data-target="#answer1">
+            What is US Freight Service?
+            <i class='bx bx-chevron-down' style="font-size: 50px;"></i>
+        </div>
+        <div id="answer1" class="collapse">
+            <p style="color: white; font-size: 25px;">US Freight Service is a leading logistics company that provides reliable and efficient freight transportation services.</p>
+        </div>
+
+        <div class="faq-question" data-toggle="collapse" data-target="#answer2">
+            How do I track my shipment?
+            <i class='bx bx-chevron-down'></i>
+        </div>
+        <div id="answer2" class="collapse">
+            <p style="color: white; font-size: 25px;">You can track your shipment by using our online tracking tool or by contacting our customer service team.</p>
+        </div>
+
+        <div class="faq-question" data-toggle="collapse" data-target="#answer3">
+            What are your business hours?
+            <i class='bx bx-chevron-down'></i>
+        </div>
+        <div id="answer3" class="collapse">
+            <p style="color: white; font-size: 25px;">Our business hours are Monday to Friday, 8am to 5pm EST.</p>
+        </div>
+
+        <div class="faq-question" data-toggle="collapse" data-target="#answer4">
+            What types of freight do you handle?
+            <i class='bx bx-chevron-down'></i>
+        </div>
+        <div id="answer4" class="collapse">
+            <p style="color: white; font-size: 25px;">We handle a variety of freight types including LTL, FTL, and specialized freight services.</p>
+        </div>
+
+        <div class="faq-question" data-toggle="collapse" data-target="#answer5">
+            How can I get a quote for shipping?
+            <i class='bx bx-chevron-down'></i>
+        </div>
+        <div id="answer5" class="collapse">
+            <p style="color: white; font-size: 25px;">You can get a quote by filling out our online form or by contacting our sales team directly.</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const faqTitle = document.getElementById("tpe4");
+    const text = "Frequently Asked Questions";
+    let index = 0;
+
+    function typeWriter() {
+      if (index < text.length) {
+        faqTitle.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 150); // Adjust typing speed here (milliseconds)
+      }
+    }
+
+    // Clear the text on load
+    faqTitle.innerHTML = "";
+
+    // Create an Intersection Observer to detect when the element is in view
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Start typing when the element is in view
+          typeWriter();
+          // Stop observing after typing starts
+          observer.disconnect();
+        }
+      });
+    });
+
+    // Observe the h2 element with id="tpe4"
+    observer.observe(faqTitle);
+  });
+</script> -->
+
+<script>
+  $(document).ready(function() {
+      $(".faq-question").click(function() {
+          $(this).find("i").toggleClass("fa-chevron-down fa-chevron-up");
+      });
+  });
+</script>
+
+<script>
+  $(document).ready(function() {
+      $(".faq-question").click(function() {
+          $(this).find("i").toggleClass("rotate"); // Toggle rotation class on click
+      });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+<div class="form-container">
+  <h2>Rate Your Experience</h2>
+  <form action="#" method="POST">
+      <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" required>
+      </div>
+      <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" required>
+      </div>
+      <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+          <label for="comments">Additional Comments</label>
+          <textarea style="resize: none;" id="comments" name="comments" placeholder="Leave your comments here..."></textarea>
+      </div>
+
+      <div class="rating-checkpoints">
+          <p style="color: white;">How would you rate your experience?</p>
+          <label>
+              <input style="color: white;" type="radio" name="rating" value="excellent" required>
+              Excellent
+          </label>
+          <label>
+              <input type="radio" name="rating" style="color: white;" value="good">
+              Good
+          </label>
+          <label>
+              <input type="radio" style="color: white;" name="rating" value="average">
+              Average
+          </label>
+          <label>
+              <input type="radio" style="color: white;" name="rating" value="poor">
+              Poor
+          </label>
+      </div>
+
+      <div class="terms" style="margin-top: 5%; margin-bottom: 5%;">
+          <input type="checkbox" id="terms" required> I agree to the terms and conditions
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Rating</button>
+  </form>
+</div>
+
+
+
+
+
+
+<!-- footer -->
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <!-- Company Logo and Info -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 footer-logo">
+          <img id="img" height="70px" width="560px" src="../us_website_image.jpg" alt="Company Logo">
+          <p class="mt-3">
+            We provide innovative solutions that enhance your business growth and productivity.
+          </p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/Logistics_Transportation/about page/about.html">About Us</a></li>
+            <li><a href="#gsap6">Services</a></li>
+            <li><a href="./contactus/index.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5>Contact Us</h5>
+          <ul>
+            <li><i class="fas fa-envelope"></i>E-mail : krbaeza@ushwt.com</li>
+            <li><i class="fas fa-phone"></i>Phone : +1-346-202-1929</li>
+            <li><i class="fas fa-map-marker-alt"></i></li>
+          </ul>
+          <!-- Social Icons -->
+          <div class="social-icons mt-4">
+            <a href="#"><i style="color: white;" class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3 copyright">
+      © 2024 Copyright:
+      <a href="https://ushwt.com/" class="text-white">ushwt.com</a>
+    </div>
+  </footer>
+
+
+
+
+
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <span id="close-cookie-banner" class="close-btn">&times;</span> <!-- Close icon -->
+      <h2>We Value Your Privacy</h2>
+      <p>
+        This website uses cookies to enhance your browsing experience, provide personalized content, 
+        and analyze traffic. By clicking "Accept", you consent to the use of cookies in accordance with our 
+        <a href="/cookie-policy" target="_blank">Cookie Policy</a>. You can manage your cookie preferences at any time.
+      </p>
+      <div class="cookie-actions">
+        <button id="accept-cookies" class="btn-accept">Accept All</button>
+        <button id="alsoclose" class="btn-manage" style="border-radius: 10%;">Reject all</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- <script>
+  // Check if the user has already accepted cookies
+  window.addEventListener('load', function() {
+    if (!localStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+    
+    // Set event listener on the 'Accept' button
+    document.getElementById('accept-cookies').addEventListener('click', function() {
+      localStorage.setItem('cookiesAccepted', 'true'); // Store consent in localStorage
+      document.getElementById('cookie-banner').style.display = 'none'; // Hide banner
+    });
+  });
+</script> -->
+<script>
+// Show the cookie banner every time (development phase)
+window.addEventListener('load', function() {
+  document.getElementById('cookie-banner').style.display = 'block'; // Show the banner
+
+  // Accept button functionality
+  document.getElementById('accept-cookies').addEventListener('click', function() {
+    document.getElementById('cookie-banner').style.display = 'none'; // Hide the banner
+  });
+
+  // Close button functionality (Hide banner when clicking the close icon)
+  document.getElementById('close-cookie-banner').addEventListener('click', function() {
+    document.getElementById('cookie-banner').style.display = 'none'; // Hide the banner
+  });
+  document.getElementById('alsoclose').addEventListener('click', function() {
+    document.getElementById('cookie-banner').style.display = 'none'; // Hide the banner
+  });
+});
+</script>
+
+  <!-- Font Awesome and Bootstrap JS -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/script/cardslider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+
+
+<script>
+  function createTriangles(numTriangles) {
+      const background = document.getElementById('background');
+      
+      for (let i = 0; i < numTriangles; i++) {
+          const triangle = document.createElement('div');
+          triangle.classList.add('triangle');
+          
+          // Randomize triangle color
+          const color = Math.random() > 0.5 ? 'red' : 'darkblue';
+          triangle.style.borderBottom = `15px solid ${color}`;
+          
+          // Randomize position and size
+          triangle.style.left = Math.random() * 90 + 'vw';
+          triangle.style.top = Math.random() * 155 + 'vh';
+          triangle.style.transform = `scale(${Math.random()})`;
+
+          // Randomize animation duration and movement distance
+          const duration = Math.random() * 5 + 5; // Between 10s and 20s
+          const deltaX = Math.random() * 200 - 100; // Random movement -100px to +100px on X axis
+          const deltaY = Math.random() * 200 - 100; // Random movement -100px to +100px on Y axis
+
+          triangle.style.animation = `moveTriangle ${duration}s infinite alternate`;
+          triangle.style.setProperty('--deltaX', deltaX + 'px');
+          triangle.style.setProperty('--deltaY', deltaY + 'px');
+
+          background.appendChild(triangle);
+      }
+  }
+
+  // Create 100 triangles as background
+  createTriangles(160);
+</script>
+
+<style>
+  /* Keyframe for moving triangles */
+  @keyframes moveTriangle {
+      0% {
+          transform: translate(0, 0);
+      }
+      100% {
+          transform: translate(var(--deltaX), var(--deltaY));
+      }
+  }
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script/navbar.js"></script>
+
+</body>
+</html>

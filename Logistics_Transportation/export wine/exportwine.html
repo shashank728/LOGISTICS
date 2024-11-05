@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcohol & Wine Delivery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style/index.css">
+    <style>
+        body {
+            background-color: #f7efe6;
+            font-family: 'Georgia', serif;
+            color: #4e342e;
+        }
+
+        /* Navbar */
+        .navbar {
+            /* background-color: #0a4285; */
+        }
+
+        .navbar-brand, .nav-link {
+            /* color: white !important; */
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('luxury-wine-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+            animation: fadeIn 2s ease;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .hero h1, .hero p {
+            position: relative;
+            z-index: 2;
+            font-weight: bold;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation for sections */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .fade-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Service Cards */
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 40px;
+            background: #faf4ef;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.5s ease;
+        }
+
+        .card.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .card-img-top {
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .card-img-top {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #3e2723;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            margin: 20px 0;
+            color: #795548;
+        }
+
+        /* Call-to-action button */
+        .btn-custom {
+            background-color: #0a4285;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 30px;
+            transition: background-color 0.4s, transform 0.4s;
+        }
+
+        .btn-custom:hover {
+            background-color: #0a4285;
+            transform: scale(1.05);
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 100px 0;
+            background-color: #fff5eb;
+            color: #3e2723;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Animation for the section reveal on scroll */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.3rem;
+            }
+
+            .about-section h2 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background-color: #134ba5;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .contact-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .contact-section .btn-custom {
+            background-color: white;
+            color: #e0a11a;
+            border-radius: 30px;
+            padding: 10px 25px;
+        }
+
+        footer {
+            background-color: #3e2723;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+
+<body>
+
+      <!--Navbar-->
+  <nav class="navbar">
+    <div class="logo">
+        <img src="/images/logo-removebg-preview.png" alt="Logo">
+    </div>
+    <div class="nav-items">
+        <a href="/index.html" class="nav-link">
+            Home 
+        </a>
+        <a href="/Logistics_Transportation/about page/about.html" class="nav-link">
+            About Us 
+        </a>
+        <a href="/Logistics_Transportation/our employees/employee.html" class="nav-link">
+            Our Employees 
+        </a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Services <i class='bx bxs-down-arrow' id="arrowofnav"></i>
+            </button>
+            <div class="dropdown-content">
+              <a style="margin-top: 5%;" href="/Logistics_Transportation/air frieght services/freight.html">Air Freight Services</a>
+              <a href="/Logistics_Transportation/train freight/trainfreight.html">Train Freight Services</a>
+              <a href="/Logistics_Transportation/nvocc/seafreight.html">Sea Freight Services</a>
+              <a href="/Logistics_Transportation/export wine/exportwine.html">Alcohol and Wine Exports</a>
+              <a href="/Logistics_Transportation/luxury import export/car_export_import.html">Export Vehicles with Us</a>
+              <a href="/Logistics_Transportation/custom brokerage/warehouse.html">Warehousing Services</a>
+              <a href="/Logistics_Transportation/break bulk/projectcargo.html">Project Cargo Services</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Tools <i class='bx bxs-down-arrow' id="arrowofnav"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://dilas.ca/commercial-shipments/" >Commercial</a>
+                <a href="https://dilas.ca/personal-agreement/" >Personal</a>
+                <a href="https://dilas.ca/brokerage-fees-calculator/" >Fees Calculator</a>
+            </div>
+        </div>
+        <a href="/contactus/index.html" class="nav-link">
+            Contact Us <span class="icon"></span>
+        </a>
+    </div>
+  </nav>
+
+    <section class="hero">
+        <h1>Luxury Alcohol & Wine Delivery</h1>
+        <p>Bringing premium wines and spirits to your doorstep, swiftly and securely.</p>
+    </section>
+
+    <div class="container mt-5 fade-up" id="services">
+        <h2 class="text-center mb-5">Our Exclusive Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card fade-up">
+                    <img src="/images/wine.jpeg" class="card-img-top" alt="Wine Delivery">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Wine Delivery</h5>
+                        <p class="card-text">Carefully curated selection of wines delivered with precision and care.</p>
+                        <a href="#" class="btn btn-custom">Explore More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card fade-up">
+                    <img src="/images/wins.webp" class="card-img-top" alt="Spirit Import">
+                    <div class="card-body">
+                        <h5 class="card-title">Exclusive Spirit Import</h5>
+                        <p class="card-text">We manage the import of top-tier spirits, offering rare selections worldwide.</p>
+                        <a href="#" class="btn btn-custom">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card fade-up">
+                    <img src="/images/doortodoor.jpg" class="card-img-top" alt="Whiskey Delivery">
+                    <div class="card-body">
+                        <h5 class="card-title">Whiskey Delivered to Your Door</h5>
+                        <p class="card-text">Get premium whiskey delivered with unmatched service and elegance.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section fade-up" id="about">
+        <h2>About Us</h2>
+        <p>We are committed to bringing the finest selection of alcohol and spirits to your doorstep. Our team specializes in curating, importing, and delivering a wide variety of wines, whiskeys, and spirits to our customers with exceptional service and care. Whether you’re looking for a classic vintage or an exotic international spirit, we ensure that every delivery is handled with precision and arrives in pristine condition.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section fade-up" id="contact">
+        <h2>Get in Touch</h2>
+        <p>Contact us today to learn more about our exclusive alcohol and wine delivery services.</p>
+        <a href="mailto:contact@premiumwinespirits.com" class="btn btn-custom">Contact Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Premium Wine & Spirits. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Scroll-triggered animations
+        $(window).on('scroll', function() {
+            $('.fade-up').each(function() {
+                var elementTop = $(this).offset().top;
+                var viewportBottom = $(window).scrollTop() + $(window).height();
+                if (elementTop < viewportBottom - 50) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Flip Cards</title>
+    <link rel="stylesheet" href="/style/index.css">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0ff);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
+            justify-content: center;
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 280px;
+            height: 320px;
+            perspective: 1000px;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+       
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+       
+        .flip-card-front {
+            background-color: #fff;
+        }
+        .flip-card-back {
+            background-color: #e4dbe0; 
+            color: white;
+            transform: rotateY(180deg);
+            text-align: center;
+        }
+        
+        .flip-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #9fcda3; 
+        }
+        .flip-card h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #e8c4de;
+        }
+        .flip-card p {
+            font-size: 0.9em;
+            color: #555;
+        }
+       
+        .flip-card:nth-child(2) .flip-card-back { background-color: #95c4d4; color: white; } /* Red */
+        .flip-card:nth-child(3) .flip-card-back { background-color: #f0f0f0; color: #333; } /* White */
+    </style>
+</head>
+<body>
+
+      <!--Navbar-->
+  <nav class="navbar">
+    <div class="logo">
+        <img src="/images/logo-removebg-preview.png" alt="Logo">
+    </div>
+    <div class="nav-items">
+        <a href="/index.html" class="nav-link">
+            Home 
+        </a>
+        <a href="/Logistics_Transportation/about page/about.html" class="nav-link">
+            About Us 
+        </a>
+        <a href="/Logistics_Transportation/our employees/employee.html" class="nav-link">
+            Our Employees 
+        </a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Services <i class='bx bxs-down-arrow' id="arrowofnav"></i>
+            </button>
+            <div class="dropdown-content">
+              <a style="margin-top: 5%;" href="/Logistics_Transportation/air frieght services/freight.html">Air Freight Services</a>
+              <a href="/Logistics_Transportation/train freight/trainfreight.html">Train Freight Services</a>
+              <a href="/Logistics_Transportation/nvocc/seafreight.html">Sea Freight Services</a>
+              <a href="/Logistics_Transportation/export wine/exportwine.html">Alcohol and Wine Exports</a>
+              <a href="/Logistics_Transportation/luxury import export/car_export_import.html">Export Vehicles with Us</a>
+              <a href="/Logistics_Transportation/custom brokerage/warehouse.html">Warehousing Services</a>
+              <a href="/Logistics_Transportation/break bulk/projectcargo.html">Project Cargo Services</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Tools <i class='bx bxs-down-arrow' id="arrowofnav"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://dilas.ca/commercial-shipments/" >Commercial</a>
+                <a href="https://dilas.ca/personal-agreement/" >Personal</a>
+                <a href="https://dilas.ca/brokerage-fees-calculator/" >Fees Calculator</a>
+            </div>
+        </div>
+        <a href="/contactus/index.html" class="nav-link">
+            Contact Us <span class="icon"></span>
+        </a>
+    </div>
+  </nav>
+
+
+  <div class="main">
+    <div class="container">
+        <!-- Employee Card 1 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="man.jpg" alt="Employee Image">
+                    <h2>John Doe</h2>
+                    <p>Software Engineer</p>
+                </div>
+                <div class="flip-card-back">
+                    <h2>John Doe</h2>
+                    <p>John is a dedicated software engineer with a knack for solving complex problems and a passion for clean code.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Employee Card 2 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="man.jpg"Employee Image">
+                    <h2>Jane Smith</h2>
+                    <p>Designer</p>
+                </div>
+                <div class="flip-card-back">
+                    <h2>Jane Smith</h2>
+                    <p>Jane is a creative designer who brings visions to life with her unique approach to digital and graphic design.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Employee Card 3 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="man.jpg" alt="Employee Image">
+                    <h2>Michael Brown</h2>
+                    <p>Project Manager</p>
+                </div>
+                <div class="flip-card-back">
+                    <h2>Michael Brown</h2>
+                    <p>Michael is a strategic project manager known for his organizational skills and eye for detail in project execution.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more Employee Cards as needed -->
+    </div>
+  </div>
+
+
+
+</body>
+</html>

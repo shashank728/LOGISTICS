@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Brief Form</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #212179;
+            margin: 0;
+            padding: 20px;
+            position: relative; /* Relative positioning for the balls */
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: auto;
+            margin-top: 20%;
+            padding: 30px;
+            border: 2px solid #212179;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative; /* Set position for the balls */
+            z-index: 1; /* Ensure form is above balls */
+        }
+
+        .form-container::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: #212179;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            border-radius: 0 0 10px 10px;
+        }
+
+        /* Styling for the balls */
+        .ball {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(255, 0, 0, 0.5);
+            z-index: 0; /* Send balls behind form */
+        }
+
+        .ball.one {
+            width: 100px;
+            height: 100px;
+            top: -20px; /* Positioning the ball */
+            left: -50px;
+        }
+
+        .ball.two {
+            width: 80px;
+            height: 80px;
+            top: 100px; /* Positioning the ball */
+            right: -30px;
+        }
+
+        .ball.three {
+            width: 60px;
+            height: 60px;
+            bottom: -30px; /* Positioning the ball */
+            left: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #212179;
+            font-size: 2.5em;
+            margin: 20px 0 10px; /* Margin for spacing */
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 30px; /* Margin for spacing */
+        }
+
+        .section {
+            margin-bottom: 40px; /* Increased bottom margin between sections */
+            border-bottom: 2px solid #212179;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 2em; /* Increased heading size */
+            margin-bottom: 15px;
+            color: #212179;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px; /* Increased top margin for labels */
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 20px; /* Increased bottom margin between inputs */
+            border: 1px solid #212179;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1.1em;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus {
+            border-color: red;
+            outline: none;
+            box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+        }
+
+        .submit-btn {
+            background-color: #212179;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 20px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .submit-btn:hover {
+            background-color: red;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+
+    
+  
+  <nav class="navbar">
+    <div class="logo">
+        <img src="/images/logo-removebg-preview.png" alt="Logo">
+    </div>
+    <div class="nav-items">
+        <a href="/index.html" class="nav-link">
+            Home 
+        </a>
+        <a href="/Logistics_Transportation/about page/about.html" class="nav-link">
+            About Us 
+        </a>
+        <a href="/Logistics_Transportation/our employees/employee.html" class="nav-link">
+            Our Employees 
+        </a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Services <i class='bx bxs-down-arrow' id="arrowofnav"></i>
+            </button>
+            <div class="dropdown-content">
+              <a style="margin-top: 5%;" href="/Logistics_Transportation/air frieght services/freight.html">Air Freight Services</a>
+              <a href="/Logistics_Transportation/train freight/trainfreight.html">Train Freight Services</a>
+              <a href="/Logistics_Transportation/nvocc/seafreight.html">Sea Freight Services</a>
+              <a href="/Logistics_Transportation/export wine/exportwine.html">Alcohol and Wine Exports</a>
+              <a href="/Logistics_Transportation/luxury import export/car_export_import.html">Export Vehicles with Us</a>
+              <a href="/Logistics_Transportation/custom brokerage/warehouse.html">Warehousing Services</a>
+              <a href="/Logistics_Transportation/break bulk/projectcargo.html">Project Cargo Services</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Tools <i class='bx bxs-down-arrow' id="arrowofnav"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://dilas.ca/commercial-shipments/" >Commercial</a>
+                <a href="https://dilas.ca/personal-agreement/" >Personal</a>
+                <a href="https://dilas.ca/brokerage-fees-calculator/" >Fees Calculator</a>
+            </div>
+        </div>
+        <a href="/contactus/index.html" class="nav-link">
+            Contact Us <span class="icon"></span>
+        </a>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="form-container">
+        
+    <h1>Get Your Quote</h1>
+    <p>Please fill out the fields below to help us better understand your business and needs.</p>
+        <div class="section">
+            <h2>1. General Information:</h2>
+            <label for="client-name">Client Name:</label>
+            <input type="text" id="client-name" required>
+
+            <label for="brand-name">Brand Name:</label>
+            <input type="text" id="brand-name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="cell">Cell:</label>
+            <input type="tel" id="cell" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+
+            <label for="website">Website:</label>
+            <input type="text" id="website" required>
+
+            <label for="social-media">Social Media:</label>
+            <input type="text" id="social-media" required>
+
+            <label for="legal-rep">Legal Representative:</label>
+            <input type="text" id="legal-rep" required>
+        </div>
+
+        <div class="section">
+            <h2>2. Product Information:</h2>
+            <label for="products">Products (with HT - Tariff Fraction):</label>
+            <input type="text" id="products" required>
+
+            <label for="product-origin">Product Origin:</label>
+            <input type="text" id="product-origin" required>
+
+            <label for="tariff-registration">Tariff Registration (IRS):</label>
+            <input type="text" id="tariff-registration" required>
+
+            <label for="corporate-colors">Corporate Colors:</label>
+            <input type="text" id="corporate-colors" required>
+
+            <label for="partners">Partners / Affiliates:</label>
+            <input type="text" id="partners" required>
+
+            <label for="certifications">Certifications:</label>
+            <input type="text" id="certifications" required>
+        </div>
+
+        <div class="section">
+            <h2>3. Business Information:</h2>
+            <label for="objective">Objective:</label>
+            <input type="text" id="objective" required>
+
+            <label for="competitors">Competitors:</label>
+            <input type="text" id="competitors" required>
+
+            <label for="product-presentation">Product Presentation:</label>
+            <input type="text" id="product-presentation" required>
+
+            <label for="samples">Do you require Samples? (Yes / No):</label>
+            <input type="text" id="samples" required>
+
+            <label for="market-studies">Market Studies (If available, please attach):</label>
+            <input type="text" id="market-studies" required>
+
+            <label for="payment-contact">Payment Contact:</label>
+            <input type="text" id="payment-contact" required>
+
+            <label for="duns-brands">DUNS & Brands:</label>
+            <input type="text" id="duns-brands" required>
+
+            <label for="id">ID (Color copy of identification document):</label>
+            <input type="text" id="id" required>
+        </div>
+
+        <div class="section">
+            <h2>4. Export Information:</h2>
+            <label for="product-exported">Product to be Exported:</label>
+            <input type="text" id="product-exported" required>
+
+            <label for="reference-number">Reference Number:</label>
+            <input type="text" id="reference-number" required>
+
+            <label for="pg-code">PG (General Product Code):</label>
+            <input type="text" id="pg-code" required>
+
+            <label for="purchase-name">Purchase Name:</label>
+            <input type="text" id="purchase-name" required>
+        </div>
+
+        <button class="submit-btn" type="submit">Submit</button>
+    </div>
+</body>
+</html>
